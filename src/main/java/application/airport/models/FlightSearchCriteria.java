@@ -7,9 +7,6 @@ public class FlightSearchCriteria implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-
-
-
     private String departureCity;
     private Date departureDate;
     private String arrivalCity;
@@ -23,6 +20,10 @@ public class FlightSearchCriteria implements Serializable {
         this.departureDate = departureDate;
         this.arrivalCity = arrivalCity;
         this.arrivalDate = arrivalDate;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public String getDepartureCity() {

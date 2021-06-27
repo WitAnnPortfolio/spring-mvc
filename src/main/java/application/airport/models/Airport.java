@@ -15,6 +15,10 @@ public class Airport implements Serializable {
         this.airportCode = airportCode;
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     public String getAirportName() {
         return airportName;
     }

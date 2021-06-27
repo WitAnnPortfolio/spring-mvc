@@ -29,6 +29,10 @@ public class SpecialDeal implements Serializable {
         this.endOn = new Date(endOn.getTime());
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     public Airport getDepartureCity() {
         return departureCity;
     }
