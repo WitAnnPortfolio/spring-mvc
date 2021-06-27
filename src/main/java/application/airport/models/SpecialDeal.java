@@ -2,11 +2,14 @@ package application.airport.models;
 
 import org.springframework.util.Assert;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 
-public class SpecialDeal {
+public class SpecialDeal implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Airport departureCity;
     private Airport arrivalCity;

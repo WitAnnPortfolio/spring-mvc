@@ -1,7 +1,11 @@
 package application.airport.models;
 
 
-public class Airport {
+import java.io.Serializable;
+
+public class Airport implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String airportName;
     private String airportCode;

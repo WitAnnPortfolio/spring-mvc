@@ -1,8 +1,14 @@
 package application.airport.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class FlightSearchCriteria {
+public class FlightSearchCriteria implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+
+
 
     private String departureCity;
     private Date departureDate;
